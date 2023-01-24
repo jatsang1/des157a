@@ -38,6 +38,7 @@ ul li a{
     text-decoration: none;
 }
 ul li:hover{
+    cursor: pointer;
     display: block;
     background-color: #1A05A6;
 }
@@ -90,6 +91,7 @@ footer a{
     font-size: 5em;
 }
 #banner:hover{
+    cursor: pointer;
     color: #ff1493;
     border: 4px white dashed;
     background-color: #2E0259;
