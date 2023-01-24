@@ -37,7 +37,7 @@ ul li a{
     color:#ff1493;
     text-decoration: none;
 }
-ul li a:hover{
+ul li:hover{
     display: block;
     background-color: #1A05A6;
 }
