@@ -83,6 +83,7 @@ footer a{
     height: 250px;
     margin: auto;
     border: 2px white dashed;
+    padding: 2px;
     background-color: #1b0246;
     color: #1b0246;
     transition: all 1s;
@@ -94,6 +95,7 @@ footer a{
     cursor: pointer;
     color: #ff1493;
     border: 4px white dashed;
+    padding: 0px;
     background-color: #2E0259;
 }
 
