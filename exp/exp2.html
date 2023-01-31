@@ -8,8 +8,42 @@
   </head>
   <body>
     <h1>Experiment 2</h1>
+    <p>
+      Don't like this color? Refresh to choose another color to change the
+      background!
+    </p>
     <script>
-    //    not decide yet
+      /* The program asks the user for their favorite color from a provided list through a prompt. 
+        Depending on the color they choose, the background changes to their favorite/chose color.*/
+
+      // User chooses a color from the list, it can be in any case because it will return the value as lowercase.
+      function chooseColor() {
+        var userColor = prompt(
+          "Choose your favorite color: red, orange, yellow, green, blue, indigo or violet.",
+          ""
+        ); // ROYGBIV
+        var lowercaseUserColor = userColor.toLocaleLowerCase();
+        return lowercaseUserColor;
+      }
+      // From the chosen color from the prompt, the background will change to the corresponding color.
+      function changeBackground(userColor) {
+        // An array to match the prompt returned value.
+        var colors = [
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "indigo",
+          "violet",
+        ];
+        for (var i = 0; i < colors.length; i++) {
+          if (userColor === colors[i]) {
+            document.body.style.backgroundColor = colors[i];
+          }
+        }
+      }
+      changeBackground(chooseColor());
     </script>
   </body>
 </html>
