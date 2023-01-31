@@ -1,0 +1,61 @@
+body {
+  margin: 50px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  background-color: #0d0d0d;
+  color: #4cd948;
+  font-size: 1.18em;
+  max-width: 1200px;
+}
+article {
+  display: flex;
+  border: #4cd948 solid;
+}
+date {
+  margin-top: 30px;
+  padding-left: 25px;
+  text-decoration: underline;
+  font-size: larger;
+}
+#log {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  line-height: 1.8em;
+}
+h1 {
+  font-size: 2em;
+}
+#box {
+  animation: blink 1s infinite alternate;
+}
+h2 {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+p {
+  text-indent: 30px;
+  margin: 0;
+  width: 95%;
+}
+.p2 {
+  margin-top: 10px;
+}
+a {
+  text-decoration: underline;
+  color: #e5ff00c8;
+}
+@keyframes blink {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

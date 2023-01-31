@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Experiment 1</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Experiment 1</h1>
     <h2>Open the console to see the fucntionality of the code.</h2>
     <script>
-    // This is a program that takes a lowercase string and capitalizes the first letter of each word in the string.
-    var lowerStr = "please don't capitalize me!";
-    //  splits loweStr into an array of substrings.
-    var strArray = lowerStr.split(" ");
+      // This is a program that takes a lowercase string and capitalizes the first letter of each word in the string.
+      var lowerStr = "please don't capitalize me!";
+      //  splits loweStr into an array of substrings.
+      var strArray = lowerStr.split(" ");
 
-    // loop that takes each word and makes the first letter uppercase.
-    for (var i = 0; i < strArray.length; i++) {
-        strArray[i] = strArray[i].charAt(0).toUpperCase() + strArray[i].slice(1);
-    }
+      // loop that takes each word and makes the first letter uppercase.
+      for (var i = 0; i < strArray.length; i++) {
+        strArray[i] =
+          strArray[i].charAt(0).toUpperCase() + strArray[i].slice(1);
+      }
 
-    // puts the array of substrings back to a single string and print it in the console.
-    var upperStr = strArray.join(" ");
-    console.log(upperStr);
-
+      // puts the array of substrings back to a single string and print it in the console.
+      var upperStr = strArray.join(" ");
+      console.log(upperStr);
     </script>
-</body>
+  </body>
 </html>
