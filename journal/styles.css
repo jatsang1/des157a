@@ -10,6 +10,7 @@ body {
 article {
   display: flex;
   border: #4cd948 solid;
+  margin-bottom: 20px;
 }
 date {
   margin-top: 30px;
