@@ -26,7 +26,8 @@ main {
   position: relative;
   left: 720px;
   padding: 0px 30px 0px;
-  /* border: 3px solid #73ad21; */
+  border-left: 1px solid #58585ae4;
+  border-right: 1px solid #58585ae4;
 }
 #intro {
   top: 60px;
