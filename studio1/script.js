@@ -43,7 +43,7 @@
     const bpart = document.querySelector("#bpart").value;
     const adj1 = document.querySelector("#adj1").value;
     const adj2 = document.querySelector("#adj2").value;
-    const myPokemon = `${nameP}, the ${type}-type ${animal} pokémon. It spends its time in the${place3}, and enjoys ${verb}. 
+    const myPokemon = `${nameP}, the ${type}-type ${animal} pokémon. It spends its time in the ${place3}, and enjoys ${verb}. 
     It uses its ${bpart} to launch a ${adj1} attack, and it is quite powerful. It is a ${adj2} pokemon. It should be the perfect fit for what you're looking for!`;
     
     // pokemon.src = "images/pokemon.png"
