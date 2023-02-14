@@ -11,69 +11,81 @@
       rel="stylesheet"
     />
     <!-- My Fonts -->
-    <link href="" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet" />
     <!-- My JS -->
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Pokémon MadLibs</h1>
+    <header>
+      <img src="images/plogo.png" alt="plogo" width="510" height="270" />
+    </header>
     <main>
-      <section id="intro">
+      <section id="intro" class="showing">
         <h2>Welcome</h2>
         <form>
           <label for="name">Name</label>
-          <input type="text" id="name" required />
-          <br />
-          <label for="place1">Place 1</label>
-          <input type="text" id="place1" />
-          <br />
+          <input type="text" id="name" placeholder="John" />
+
+          <label for="place1">Favorite Place</label>
+          <input type="text" id="place1" placeholder="Cruess" />
+
           <label for="occupation">Occupation</label>
-          <input type="text" id="occupation" />
-          <br />
-          <label for="place2">Place 2</label>
-          <input type="text" id="place2" />
-          <br />
-          <!-- <input type="submit" value="Next" /> -->
+          <input type="text" id="occupation" placeholder="Trainer" />
+
+          <label for="place2">Location</label>
+          <input type="text" id="place2" placeholder="France" />
+
+          <input type="submit" id="btn1" value="Next" />
         </form>
       </section>
-      <section id="second">
+      <section id="second" class="hidden">
         <h2>Pokémon</h2>
         <form>
           <label for="nameP">Pokémon Name</label>
-          <input type="text" id="nameP" required/>
-          <br />
-          <label for="type">Favorite element</label>
+          <input type="text" id="nameP" placeholder="Maxy" required />
+
+          <label for="type">Favorite Element</label>
           <select id="type">
             <option value="">---</option>
-            <option value="fire">fire</option>
-            <option value="water">water</option>
-            <option value="grass">grass</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
           </select>
-          <br />
+
           <label for="animal">Animal</label>
-          <input type="text" id="animal" />
-          <br />
-          <label for="place3">Place 3</label>
-          <input type="text" id="place3" />
-          <br />
-          <label for="verb">Verb ending -ing</label>
-          <input type="text" id="verb" />
-          <br />
-          <label for="bpart">Body part</label>
-          <input type="text" id="bpart" />
-          <br />
+          <input type="text" id="animal" placeholder="snake"/>
+
+          <label for="place3">Environment</label>
+          <input type="text" id="place3" placeholder="ocean"/>
+
+          <label for="verb">Action Verb (-ing)</label>
+          <input type="text" id="verb" placeholder="running"/>
+
+          <label for="bpart">Body Part</label>
+          <input type="text" id="bpart" placeholder="toe"/>
+
           <label for="adj1">Adjective 1</label>
-          <input type="text" id="adj1" />
-          <br />
+          <input type="text" id="adj1" placeholder="stinky"/>
+
           <label for="adj2">Adjective 2</label>
-          <input type="text" id="adj2" />
-          <br />
-          <input type="submit" value="Submit" />
+          <input type="text" id="adj2" placeholder="strong"/>
+          <div id="buttons">
+            <!-- <input type="submit" id="btn2" value="Back" /> -->
+            <input type="submit" value="Submit" />
+          </div>
         </form>
       </section>
-      <section id="output"></section>
+      <!-- <div >
+        <img id="pokemon" src="" alt="pokemon" class="hidden">
+      </div> -->
+      <section id="output" class="hidden">
+        <p>This is my madlibs window used for reference.</p>
+      </section>
     </main>
   </body>
 </html>
