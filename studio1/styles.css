@@ -83,6 +83,9 @@ input[type="text"]{
 input[type="submit"]{
   padding: 10px;
 }
+input[type="submit"]:hover{
+  cursor: pointer;
+}
 input[type="text"]:focus {
   border: 1px solid #d6d9dc;
   outline: 0;
