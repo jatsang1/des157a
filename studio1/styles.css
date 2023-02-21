@@ -84,7 +84,13 @@ input[type="text"]{
 input[type="submit"]{
   padding: 10px;
 }
+input[type="button"]{
+  padding: 10px;
+}
 input[type="submit"]:hover{
+  cursor: pointer;
+}
+input[type="button"]:hover{
   cursor: pointer;
 }
 input[type="text"]:focus {
@@ -92,7 +98,7 @@ input[type="text"]:focus {
   outline: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-buttons {
+#buttons {
   display: flex;
   justify-content: space-between;
 }

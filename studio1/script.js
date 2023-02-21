@@ -7,23 +7,25 @@
   const output = document.querySelector("#output");
   const btn1 = document.querySelector("#btn1");
   // const pokemon = document.querySelector("#pokemon")
-  //   const btn2 = document.querySelector("#btn2");
+  const btn2 = document.querySelector("#btn2");
 
-  btn1.addEventListener("click", function () {
-    intro.className = "hidden";
-    second.className = "showing";
-    // pokemon.className = "showing";
-  });
+  // btn1.addEventListener("click", function () {
+  //   intro.className = "hidden";
+  //   second.className = "showing";
+  //   // pokemon.className = "showing";
+  // });
 
   //   attempting back button
-  //   btn2.addEventListener("click", function () {
-  //     intro.className = "showing";
-  //     second.className = "hidden";
-  //   });
+  btn2.addEventListener("click", function () {
+    intro.className = "showing";
+    second.className = "hidden";
+  });
 
 
   intro.addEventListener("submit", function (event) {
     event.preventDefault();
+    intro.className = "hidden";
+    second.className = "showing";
     output.className = "showing";
     const name = document.querySelector("#name").value;
     const place1 = document.querySelector("#place1").value;
@@ -50,6 +52,7 @@
     const btn3 = document.querySelector("#btn3");
     // pokemon.src = "images/pokemon.png"
     btn3.className = "hidden";
+    btn2.className = "hidden";
     output.innerHTML = myPokemon;
   });
 })();
