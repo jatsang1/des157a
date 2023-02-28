@@ -1,9 +1,9 @@
 body{
-    font-family: 'Satisfy', cursive;
+    font-family: 'Libre Franklin', sans-serif;
     min-width: 1200px;
     min-height: 750px;
 }
-section{
+header,section{
     width: 100%;
     height: 750px;
 }
@@ -18,8 +18,97 @@ section{
     top: 262px;
     color: #FFB800;
 }
+#start{
+    font-size: 2.2em;
+    position: relative;
+    left: 725px;
+    top: 238px;
+}
+#start:link, #start:visited {
+    background-color: #A53B00;
+    color: #00FFB8;
+    padding: 20px 20px 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px #742900;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #start:hover, #start:active {
+    background-color: #A53B00;
+    color: #B800FF;
+  }
 .content{
     background-image: url(images/content.jpg);
+}
+/* hide images */
+/* .myImages {
+    display: none;
+} */
+figure{
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    top: 100px;
+}
+img{
+    width: 800px;
+    height: 550px;
+}
+/* previous & next buttons */
+.prev,.next{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    color: #00FFB8;
+    font-size: 1.5em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.prev{
+    left: 70px;
+}
+.next{
+    left: 780px;
+}
+/* text of image position*/
+.numbertext {
+    color: #00FFB8;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* caption text */
+.text{
+    width: 880px;
+    background-color: #A53B00;
+}
+/* progression dots */
+#dots{
+    position: absolute;
+    left: 408px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    color: white;
+    background-color: rgb(170, 191, 170);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #567250;
 }
 .ending{
     background-image: url(images/ending.jpg);
@@ -33,7 +122,8 @@ section{
     color: #FFB800;
 }
 h1{
-    margin: 0px;
+    font-family: 'Satisfy', cursive;
+    margin: 0;
 }
 h1#picture{
     left: 398px;
@@ -42,4 +132,13 @@ h1#picture{
 h1#end{
     left: 430px;
     top: 100px;
+}
+/* Animations */
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

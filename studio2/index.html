@@ -8,22 +8,57 @@
     <!-- Normalize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
     <!-- My Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Satisfy&display=swap" rel="stylesheet">
     <!-- My Styles -->
     <link rel="stylesheet" href="styles.css"/>
     <!-- My JS -->
     <script src="script.js" defer></script>
 </head>
 <body>
-    <section class="landing">
-        <h1 id="every">Every</h1>
+    <header class="landing">
+        <h1>Every</h1>
         <h1 id="picture">Picture</h1>
+        <a id="start" href="#first" class="selected">Let's begin</a>
+    </header>
+    <section id="first" class="content">
+            <figure class="myImages fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="images/fire.jpeg">
+                <figcaption class="text">Image Caption</figcaption>
+            </figure>
+            <figure class="myImages fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="images/puddle.jpeg">
+                <figcaption class="text">Image Caption</figcaption>
+            </figure>
+            <figure class="myImages fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="images/road.jpeg">
+                <figcaption class="text">Image Caption</figcaption>
+            </figure>
+            <figure class="myImages fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/lamp.jpeg">
+                <figcaption class="text">Image Caption</figcaption>
+            </figure>
+            <figure class="myImages fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/library.jpeg">
+                <figcaption class="text">Image Caption</figcaption>
+            </figure>
+            <a class="prev" onclick="plusImages(-1)">&#10094;</a>
+            <a class="next" onclick="plusImages(1)">&#10095;</a>
+            
+        <div id="dots">
+            <span class="dot" onclick="currentImage(1)"></span>
+            <span class="dot" onclick="currentImage(2)"></span>
+            <span class="dot" onclick="currentImage(3)"></span>
+            <span class="dot" onclick="currentImage(4)"></span>
+            <span class="dot" onclick="currentImage(5)"></span>
+        </div>
     </section>
-    <section class="content">
-        <!-- <h1>Content</h1> -->
-    </section>
-    <section class="ending">
-        <h1 id="the">The</h1>
+    <section id="second" class="ending">
+        <h1>The</h1>
         <h1 id="end">End</h1>
     </section>
 </body>
