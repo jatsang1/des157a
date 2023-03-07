@@ -1,0 +1,133 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.5em;
+    background-image: url(images/background.jpg);
+    max-width: 1200px;
+    max-height: 750px;
+}
+main{
+    margin: 20px 333px 20px 333px;
+}
+button { 
+    padding: 10px;
+    background-color: #F9D68C;
+    border: 12px solid #F1AF23;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+footer{
+    position: absolute;
+    bottom: 20px;
+    left: 565px;
+}
+#begin{
+    background-color: #F9D68C;
+    border: 12px solid #F1AF23;
+    border-radius: 6px;
+}
+#begin h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 64px;
+    padding-left: 3px;
+    text-align: center;
+}
+#gamecontrol{
+    /* background-color: aliceblue; */
+    text-align: center;
+    padding: 10px 0px 0px;
+}
+#gamecontrol button{
+    font-size: 24px;
+}
+#startgame:hover, #roll:hover, #rollagain:hover{
+    color: green;
+}
+#quit{
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+#quit:hover, #overlay button:hover, #pass:hover{
+    color: red;
+}
+#game {
+    background-color: #914D0E;
+    color: #f9e5ba;
+    text-align: center;
+    padding: 20px
+}
+#game p{
+    font-size: 18px;
+}
+#actions {
+    /* background-color: silver; */
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+}
+#actions .roller{
+    margin-right: 111px;
+}
+#score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    /* text-align: center; */
+    padding: 0;
+}
+#score p{
+    /* display: inline; */
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    bottom: 10px
+}
+#score1{
+    left: 96px;
+}
+#score2{
+    right: 91px;
+}
+#rulesarea{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 50px;
+}
+#rulesarea div{
+    padding: 20px 0px 20px
+}
+#rulesarea p{
+    font-size: 18px;
+}
+#rules{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+}
+#rules:hover{
+    color: blue;
+}
+#overlay article{
+    padding: 20px;
+    width: 1085px;
+    background-color: #914D0E;
+    border: 5px solid #F1AF23;
+    border-radius: 6px;
+    color: #f9e5ba;
+}
+#overlay button{
+    font-family: 'Press Start 2P', cursive;
+    border: 0;
+}
+.hidden {
+    display: none;
+}
+.showing {
+    display: block;
+}
