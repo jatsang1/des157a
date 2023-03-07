@@ -1,0 +1,25 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #B33028;
+    color: #333;
+    max-width: 960px;
+    width: 45%;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+h1, article{
+    padding: 10px 20px 10px;
+    background-color: white;
+}
+h1, h2, h3{
+    font-family: 'Press Start 2P', cursive;
+}
+p{
+    font-size: 16px;
+    
+}
+footer{
+    color: white;
+    text-align: center;
+}
