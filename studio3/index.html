@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdoms</title>
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <!-- My Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- My JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="begin">
+            <h1>KINGDOMS</h1>
+        </section>
+        <aside id="rulesarea">
+            <button id="rules" class="open">Rules</button>
+            <div id="overlay" class="hidden">
+                <article>
+                    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player's turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+                    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don't do that.</p>
+                    <button class="close"> X Close</button>
+                </article>
+            </div>
+        </aside>
+        <section id="score">
+            <!-- <p id="score1"><strong>00</strong></p>
+            <p id="score2"><strong>00</strong></p>
+            <img src="images/scorekeep.png" alt="sign1" id="sign1">
+            <img src="images/scorekeep.png" alt="sign2" id="sign2"> -->
+        </section>
+        <section id="gamecontrol">
+            <button id="startgame">Start &#9658;</button>
+        </section>
+        <section id="game"></section>
+        <section id="actions">
+            <!-- <button id="roll" class="roller">Roll the Dice</button>
+            <button id="rollagain" class="roller">Roll</button> 
+            <button id="pass">Pass</button> -->
+        </section>
+    </main>
+    <footer>
+        <p><a href="sources.html">Sources</a></p>
+    </footer>
+</body>
+</html>
