@@ -107,10 +107,12 @@
             console.log('the game proceeds');
             // gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
             gameData.score[gameData.index] += gameData.rollSum;
-            actionArea.innerHTML = '<button id="rollagain" class="roller">Again</button><button id="pass">Pass</button>'
+            actionArea.innerHTML = '<button id="rollagain" class="roller">Roll</button><button id="pass">Pass</button>'
 
             document.getElementById('rollagain').addEventListener('click', function(){
-                setUpTurn();
+                // setUpTurn();
+                throwDice();
+                rollSound.play();
             });
 
             document.getElementById('pass').addEventListener('click', function(){

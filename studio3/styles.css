@@ -3,6 +3,7 @@ body {
     color: #333;
     line-height: 1.5em;
     background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
     max-width: 1200px;
     max-height: 750px;
 }
