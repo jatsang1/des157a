@@ -15,27 +15,35 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="landing">
+    <header id="start">
         <h1>Every</h1>
         <h1 id="picture">Picture</h1>
-        <a id="start" href="#first" class="selected">Let's begin</a>
+        <a id="begin" href="#slideshow" class="selected">Let's begin</a>
     </header>
-    <section id="first" class="content">
+    <section id="slideshow">
+        <div id="one">
             <figure class="myImages fade">
                 <div class="numbertext">1 / 5</div>
-                <img src="images/fire.jpeg" alt="fire">
-                <figcaption class="text">Fire surrounded by autumn leaves.</figcaption>
+                <img src="images/fire.jpeg" alt="fire" id="image">
+                <figcaption class="text">fire</figcaption>
             </figure>
+            <p>details of image</p>
+        </div>
+        <!-- <div id="two">
             <figure class="myImages fade">
                 <div class="numbertext">2 / 5</div>
                 <img src="images/puddle.jpeg" alt="puddle">
                 <figcaption class="text">Puddle of autumn leaves reflecting the sky.</figcaption>
             </figure>
+        </div>
+        <div id="three">
             <figure class="myImages fade">
                 <div class="numbertext">3 / 5</div>
                 <img src="images/road.jpeg" alt="road">
                 <figcaption class="text">Two solid yellow lines on the road, littered with autumn leaves./figcaption>
             </figure>
+        </div>
+
             <figure class="myImages fade">
                 <div class="numbertext">4 / 5</div>
                 <img src="images/lamp.jpeg" alt="lamp">
@@ -45,21 +53,13 @@
                 <div class="numbertext">5 / 5</div>
                 <img src="images/library.jpeg" alt="library">
                 <figcaption class="text">Library view of the autumn trees in the quad.</figcaption>
-            </figure>
-            <a class="prev" onclick="plusImages(-1)">&#10094;</a>
-            <a class="next" onclick="plusImages(1)">&#10095;</a>
-            
-        <div id="dots">
-            <span class="dot" onclick="currentImage(1)"></span>
-            <span class="dot" onclick="currentImage(2)"></span>
-            <span class="dot" onclick="currentImage(3)"></span>
-            <span class="dot" onclick="currentImage(4)"></span>
-            <span class="dot" onclick="currentImage(5)"></span>
-        </div>
+            </figure> -->
+            <button id="prev">&#10094;</button>
+            <button id="next" >&#10095;</button>
     </section>
-    <section id="second" class="ending">
+    <section id="end">
         <h1>The</h1>
-        <h1 id="end">End</h1>
+        <h1 id="theEnd">End</h1>
     </section>
 </body>
 </html>

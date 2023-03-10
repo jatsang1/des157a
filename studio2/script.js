@@ -7,7 +7,7 @@
     window.scrollTo(0, 0);
   }
   // Clicking on the anchor tag smoothly scrolls to first section.
-  document.querySelectorAll('#start').forEach(anchor => {
+  document.querySelectorAll('begin').forEach(anchor => {
     anchor.addEventListener('click', function (start) {
       start.preventDefault();
   
@@ -16,35 +16,50 @@
       })
     })
   });
-  let slideIndex = 1;
-  showImages(slideIndex);
-  // Next/previous controls
-  function plusImages(n) {
-    showImages(slideIndex += n);
-  }
-  // const next = document.querySelector('.next');
-  // next.addEventListener('click', function plusImages(n){
-  //   showImages(imgIndex += n)
-  // });
 
-  // current image
-  function currentImage(n) {
-    showImages(slideIndex = n);
-  }
-  function showImages(n) {
-    let i;
-    let images = document.getElementsByClassName("myImages");
-    let dots = document.getElementsByClassName("dot");
-    if (n > images.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = images.length}
-    for (i = 0; i < images.length; i++) {
-      images[i].style.display = "none";
+  //array of my five images
+  const myImages = [
+    "fire.jpeg",
+    "puddle.jpeg",
+    "road.jpeg",
+    "lamp.jpeg",
+    "library.jpeg",
+  ];
+  const myText = [
+    "fire",
+    "puddle",
+    "road",
+  ];
+  let currentImage = 0;
+  const slide = document.getElementById('image');
+  const text = document.querySelector('.text');
+  // console.log(text);
+
+  // next button
+  document.getElementById("next").addEventListener('click', nextPhoto);
+
+    function nextPhoto() {
+      console.log("clicked next");
+      currentImage++;
+      if (currentImage > myImages.length - 1) {
+        currentImage = 0;
+      }
+      slide.src = `images/${myImages[currentImage]}`;
+      console.log(myText[currentImage]);
+      text.innerHTML = myText[currentImage];
+      // console.log(text);
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  
+  // previous button
+  document.getElementById("prev").addEventListener('click', previousPhoto);
+    function previousPhoto(){
+      console.log("clicked previous");
+      currentImage--;
+      if (currentImage < 0){
+        currentImage = myImages.length - 1;
+      }
+      slide.src = `images/${myImages[currentImage]}`
+      text.innerHTML = myText[currentImage];
     }
-    images[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
 })();
   
