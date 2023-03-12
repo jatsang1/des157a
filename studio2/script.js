@@ -2,9 +2,13 @@
   "use script";
   console.log("reading js");
 
-  // reloading page takes you back to the top.
+  // reloading page takes you back to the top, the smooth scroll was messing with it.
   window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      // behavior: "smooth",
+    });
   };
 
   // array of image position text
