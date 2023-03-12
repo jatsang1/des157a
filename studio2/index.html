@@ -8,7 +8,9 @@
     <!-- Normalize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
     <!-- My Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Nunito&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- My Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- My Styles -->
     <link rel="stylesheet" href="styles.css"/>
     <!-- My JS -->
@@ -16,50 +18,30 @@
 </head>
 <body>
     <header id="start">
-        <h1>Every</h1>
-        <h1 id="picture">Picture</h1>
-        <a id="begin" href="#slideshow" class="selected">Let's begin</a>
+        <h1 id="h1_1">Every</h1>
+        <h1 id="h1_2">Picture</h1>
+        <nav>
+            <a id="begin" href="#one">Let's begin</a>
+        </nav>
     </header>
     <section id="slideshow">
         <div id="one">
-            <figure class="myImages fade">
-                <div class="numbertext">1 / 5</div>
+            <figure class="myImages">
+                <div class="numbertext">- 1/5 -</div>
                 <img src="images/fire.jpeg" alt="fire" id="image">
-                <figcaption class="text">fire</figcaption>
+                <figcaption class="caption">-- Leaves surrounding fire --</figcaption>
             </figure>
-            <p>details of image</p>
+            <p class="details">This picture was taken outside the School of Law at Davis. I happened to be walking around near Putah Creek and noticed the words 'FIRE' engraved on the sidewalk. I assumed it was a signifier for the Fire Department to locate a hydrant. I captured this moment because the leaves framed the words in an interesting way, and the color of the ground contrasted with the orange and yellow hues.</p>
         </div>
-        <!-- <div id="two">
-            <figure class="myImages fade">
-                <div class="numbertext">2 / 5</div>
-                <img src="images/puddle.jpeg" alt="puddle">
-                <figcaption class="text">Puddle of autumn leaves reflecting the sky.</figcaption>
-            </figure>
+        <div id="buttons">
+            <i id="prev" class="fas fa-arrow-circle-left"></i>
+            <i id="next" class="fas fa-arrow-circle-right"></i>
+            <!-- <i id="end" class="fas fa-arrow-circle-right hideBtn"></i> -->
         </div>
-        <div id="three">
-            <figure class="myImages fade">
-                <div class="numbertext">3 / 5</div>
-                <img src="images/road.jpeg" alt="road">
-                <figcaption class="text">Two solid yellow lines on the road, littered with autumn leaves./figcaption>
-            </figure>
-        </div>
-
-            <figure class="myImages fade">
-                <div class="numbertext">4 / 5</div>
-                <img src="images/lamp.jpeg" alt="lamp">
-                <figcaption class="text">Lamp reflected in the muddy water.</figcaption>
-            </figure>
-            <figure class="myImages fade">
-                <div class="numbertext">5 / 5</div>
-                <img src="images/library.jpeg" alt="library">
-                <figcaption class="text">Library view of the autumn trees in the quad.</figcaption>
-            </figure> -->
-            <button id="prev">&#10094;</button>
-            <button id="next" >&#10095;</button>
     </section>
-    <section id="end">
-        <h1>The</h1>
-        <h1 id="theEnd">End</h1>
-    </section>
+    <footer id="ending">
+        <h1 id="h1_3">The</h1>
+        <h1 id="h1_4">End</h1>
+    </footer>
 </body>
 </html>
