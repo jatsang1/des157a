@@ -60,7 +60,7 @@
 
         dialogueBox.innerHTML = dialogue3;
         
-        alert('How was the journey? Did any of the text seem unclear? What elements would you suggest including to improve the playthrough?');
+        alert(' \n\u2022 How was the journey/dialogue so far? Would you prefer a clicking or scrolling format? \n\u2022 Did any of the text seem unclear or hard to read? \n\u2022 What elements would you suggest including to improve the playthrough?');
     });
 
     // const btn3 = document.querySelector('#nextBtn3')
