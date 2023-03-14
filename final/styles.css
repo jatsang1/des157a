@@ -15,6 +15,17 @@ h1, article{
 h1, h2, h3{
     font-family: 'Press Start 2P', cursive;
 }
+.userH1{
+    font-size: 1.75em;
+}
+#imgContainer{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 33%;
+    height: auto;
+}
 p{
     font-size: 16px;
     
