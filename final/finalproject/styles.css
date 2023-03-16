@@ -1,0 +1,148 @@
+@font-face {
+    font-family: pokePixel;
+    src: url(fonts/pokePixel.ttf);
+}
+body{
+    /* width: 1200px;
+    height: 750px; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: pokePixel; */
+    background-color: darkgray;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+header,footer{
+    text-align: center;
+}
+h1, h2, label{
+    font-family: "Press Start 2P", cursive;
+}
+mark{
+    display: inline-block; 
+    height: 1.15em;
+    line-height: 1.15; 
+}
+#red{
+    background-color: #EF4036;
+    width: 203px;
+    height: 710px;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#rectangle{
+    position: absolute;
+    margin-left: 50px;
+    width: 510px;
+	/* height: 300px; */
+    height: auto;
+	background-color: #C6E2BF;
+    border: 6px solid black;
+    border-radius: 8px;
+}
+#white{
+    background-color: white;
+    height: 710px;
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#info{
+    margin-left: 125px;
+}
+#info h2{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+#info p {
+    width: 302px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#btn{
+    width: 302px;
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+/* label, input[type="submit"]{
+    font-size: 22px;
+} */
+label, input{
+    display: block;
+}
+input{
+    width: 302px;
+    height: 30px;
+}
+input,
+select {
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+select{
+    padding: 1px 2px 1px;
+    width: 308px;
+    height: 34px;
+}
+input[type="text"]{
+    padding: 5px;
+}
+input[type="submit"]{
+    width: 152px;
+    height: 42px;
+    margin-bottom: 0px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: #345CA1;
+}
+.dialogue{
+    font-family: pokePixel;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.2;
+    padding: 5px;
+}
+.expand{
+    padding-right: 406px;
+    transition: 1s ease-in;
+}
+.shrink{
+    width: 143px;
+    transition: 1s ease-in;
+}
+.hide{
+    display: none;
+    transition: 1s ease-out;
+}
+.whiteW{
+    width: 551px;
+}
+.showing{
+    display: block;
+    transition: 1s ease-in;
+}
+.sprites{
+    position: relative;
+    left: 35%;
+    top: 16px;
+}
+#btnContainer{
+    position: relative;
+    left: 500px;
+    top: 200px;
+}
+/* .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */

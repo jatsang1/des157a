@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Journey V2</title>
+    <!-- Normalize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <!-- My Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- My JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="center">
+    <header>
+        <h1>Pokémon Journey V2</h1>
+    </header>
+    <main>
+        <div id="red">
+            <div id="rectangle" class="hide">
+                <img class="sprites" src="images/sleep.png">
+                <p class="dialogue"></p>
+            </div>
+            <div id="btnContainer" class="hide">
+            <button id="nextBtn" type="button">NEXT</button>
+            <button id="nextBtn2" class="hide" type="button">NEXT</button>
+            </div>
+        </div>
+        <div id="divider"><img src="images/divider.png" alt="divider"></div>
+        <div id="white" class="whiteW">
+            <section id="info">
+                <h2>Welcome to Pokémon!</h2>
+                <p>Please fill out the fields below so we can ensure a personalized experience:</p>
+                <form>
+                    <label for="name1">Name</label>
+                    <input type="text" id="name1" placeholder="Ash" required>
+                    
+                    <label for="age">Age</label>
+                    <input type="text" id="age" placeholder="10">
+
+                    <label for="name2">Another name</label>
+                    <input type="text" id="name2" placeholder="Gary" required>
+                    
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" placeholder="trainer">
+
+                    <label for="building">Place</label>
+                    <input type="text" id="building" placeholder="Oakland">
+
+                    <label for="region">Another place</label>
+                    <input type="text" id="region" placeholder="Kanto">
+    
+                    <!-- <label for="type">Type</label>
+                    <select id="type">
+                        <option value="">---</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                        <option value="grass">Grass</option>
+                    </select> -->
+    
+                    <!-- submit button -->
+                    <div id="btn">
+                        <input type="submit" id="submit" value="Submit" />
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Inspired by Pokémon</p>
+        <p><a href="sources.html">Sources</a></p>
+    </footer>
+</div>
+</body>
+</html>
