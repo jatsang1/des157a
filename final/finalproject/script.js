@@ -200,7 +200,7 @@
             const bpart = document.querySelector('#bpart').value;
             const adj = document.querySelector('#adj').value;
 
-            const dialogue4 = `<h3>Prof. ${name2}:</h3>Congradulations! You got...<br><mark>${pokeName}</mark>, the <mark>${type}</mark>-type <mark>${animal}</mark> pokémon. It spends its time in the <mark>${environment}</mark>, and it enjoys <mark>${action}</mark>. It uses its <mark>${bpart}</mark> to launch a <mark>${adj}</mark> attack, and it is quite powerful. This pokémon is the perfect partner for you!`
+            const dialogue4 = `<h3>Prof. ${name2}:</h3>Congratulations! You got...<br><mark>${pokeName}</mark>, the <mark>${type}</mark>-type <mark>${animal}</mark> pokémon. It spends its time in the <mark>${environment}</mark>, and it enjoys <mark>${action}</mark>. It uses its <mark>${bpart}</mark> to launch a <mark>${adj}</mark> attack, and it is quite powerful. This pokémon is the perfect partner for you!`
 
             captureSound.play();
             image.src = 'images/poke.png';
