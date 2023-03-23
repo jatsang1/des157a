@@ -30,6 +30,7 @@
         console.log('changing screen');
         buttonSound.play();
 
+        // delay appearance
         setTimeout(() => {
             rectangle.className = "showing";
             btnContainer.className = "showing";
@@ -43,6 +44,7 @@
 
             roosterSound.play();
 
+            // changes image after 2 seconds
             setTimeout(() => {
                 image.src = 'images/awake.png';
                 console.log("wakes up after 2 second.");
@@ -50,10 +52,10 @@
             
             dialogueBox.innerHTML = dialogue1;
             console.log('showing 1st dialogue');
-        }, 900);
-        
+        }, 1000);
     });
 
+    // Next Button 1 (goes to dialogue 2)
     const nextBtn1 = document.querySelector('#nextBtn')
     nextBtn1.addEventListener('click', function(e2A){
         e2A.preventDefault();
@@ -75,6 +77,7 @@
         console.log('showing 2nd dialogue');
     });
 
+    // Back Button 1 (go back to form1)
     const backBtn1 = document.querySelector('#backBtn');
     backBtn1.addEventListener('click', function(e2B){
         e2B.preventDefault();
@@ -89,6 +92,7 @@
         buttonSound.play();
     });
 
+    // Next Button 2 (goes to dialogue 3)
     const nextBtn2 = document.querySelector('#nextBtn2');
     nextBtn2.addEventListener('click', function(e3A){
         e3A.preventDefault();
@@ -108,6 +112,7 @@
         console.log('showing 3rd dialogue');
     });
 
+    // Back Button 2 (goes back to dialogue 1)
     const backBtn2 = document.querySelector('#backBtn2');
     backBtn2.addEventListener('click', function(e3B){
         e3B.preventDefault();
@@ -129,6 +134,7 @@
         console.log('back to showing 1st dialogue');
     });
 
+    // Next Button 3 (goes to form 2)
     const nextBtn3 = document.querySelector('#nextBtn3');
     nextBtn3.addEventListener('click', function(e4A){
         e4A.preventDefault();
@@ -143,6 +149,7 @@
         console.log('opening second form');
     });
 
+    // Back Button 3 (goes back to dialogue 2)
     const backBtn3 = document.querySelector('#backBtn3');
     backBtn3.addEventListener('click', function(e4B){
         e4B.preventDefault();
@@ -164,6 +171,7 @@
         console.log('showing 2nd dialogue');
     });
 
+    // Submit 2nd Form
     const submit2 = document.getElementById('submit2');
     submit2.addEventListener('click', function(e5){
         e5.preventDefault();
@@ -177,7 +185,8 @@
 
         backBtn3.className = "hide";
         buttonSound.play();
-        
+
+        // Delay appearance
         setTimeout(() => {
             rectangle.className = "showing";
             btnContainer.className = "showing";
